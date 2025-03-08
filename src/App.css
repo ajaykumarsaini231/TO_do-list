@@ -36,3 +36,59 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.profile p {
+  margin-top: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.chart-container {
+  margin-top: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.add-task input {
+  width: calc(100% - 100px);
+}
+
+.add-task button {
+  width: auto;
+}
+
+.task-list li,
+.completed-list li {
+  display: flex;
+}
+/* 
+.custom-bg {
+  background-color: #242424 !important;
+} */
