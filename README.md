@@ -1,6 +1,6 @@
-Sure! Here's the simplified **README.md** file that you can directly copy and paste:
 
-```md
+
+
 # To-Do List Application
 
 A simple and efficient To-Do List application built with React, Redux, and Material-UI.
