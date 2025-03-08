@@ -5,6 +5,9 @@
 
 A simple and efficient To-Do List application built with React, Redux, and Material-UI.
 
+![image](https://github.com/user-attachments/assets/03e48678-d5fa-4b86-a287-13bf07d5983a)
+
+
 ## Features
 - Add, delete, and mark tasks as completed.
 - Set task priority (High, Medium, Low).
@@ -13,6 +16,18 @@ A simple and efficient To-Do List application built with React, Redux, and Mater
 - User authentication with Redux.
 - Responsive design for all devices.
 - Saves tasks in local storage.
+## Screenshots
+
+### Task Management
+![image](https://github.com/user-attachments/assets/5ed4f197-cf93-4998-91ab-790733b6706e)
+
+
+### Statistics View
+![image](https://github.com/user-attachments/assets/e7e3b16e-7dbe-4620-a932-5c9fe690adaf)
+
+
+### Weather Integration
+![image](https://github.com/user-attachments/assets/1e996fd5-6e94-4e56-85e4-b9a7b5575b5c)
 
 ## Getting Started
 
