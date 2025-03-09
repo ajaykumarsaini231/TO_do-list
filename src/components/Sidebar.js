@@ -3,12 +3,21 @@ import TaskChart from "./TaskChart";
 import "../App.css";
 
 const Sidebar = ({ tasksCount, completedCount }) => {
- 
+  const handleLogout = () => {
+    localStorage.clear();
+    console.log("Local storage cleared!");
+    location.reload()
+  };
   return (
-    <div >
+    <div className="sidebar px-4">
       <h4>Profile</h4>
       <div className="profile">
-        <img src="https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg?semt=ais_hybrid" alt="Profile"  width={150} style={{ borderRadius: "50%" }}/>
+        <img
+          src="https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg?semt=ais_hybrid"
+          alt="Profile"
+          width={150}
+          style={{ borderRadius: "50%" }}
+        />
         <p>Hey, ABCD</p>
       </div>
       <ul>
@@ -20,10 +29,10 @@ const Sidebar = ({ tasksCount, completedCount }) => {
       </ul>
       <div className="chart-container">
         <h3>Today Tasks</h3>
-              
-        <TaskChart tasksCount={tasksCount} completedCount={completedCount}  />
 
+        <TaskChart tasksCount={tasksCount} completedCount={completedCount} />
       </div>
+      <input type="submit" value={"Reset"} className="btn btn-warning w-100 my-4" onClick={handleLogout} />
     </div>
   );
 };
