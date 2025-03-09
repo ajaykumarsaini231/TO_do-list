@@ -6,7 +6,7 @@ const Sidebar = ({ tasksCount, completedCount }) => {
  
   return (
     <div >
-      <h2>DoIt</h2>
+      <h4>Profile</h4>
       <div className="profile">
         <img src="https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg?semt=ais_hybrid" alt="Profile"  width={150} style={{ borderRadius: "50%" }}/>
         <p>Hey, ABCD</p>
