@@ -54,7 +54,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem("completedTasks", JSON.stringify(completedTasks));
   }, [completedTasks]);
-
+  
   const addTask = () => {
     if (newTaskText.trim()) {
       const newTask = {
@@ -63,7 +63,7 @@ function App() {
         completed: false,
         important: false,
       };
-      setTasks([...tasks, newTask]);
+      setTasks([newTask ,...tasks]);
       setNewTaskText("");
     }
   };
@@ -74,7 +74,7 @@ function App() {
 
     if (completedTask) {
       completedTask.completed = true;
-      setCompletedTasks([...completedTasks, completedTask]);
+      setCompletedTasks([completedTask, ...completedTasks]);
     }
 
     setTasks(updatedTasks);
@@ -158,7 +158,7 @@ function App() {
                 >
                   <div>
                     <input type="checkbox" className="fw-bolder" />
-                    <span style={{ marginLeft: "10px" }} className="fw-bolder">{task.text}</span>
+                    <span style={{ marginLeft: "10px" }} className="fw-bolder">{task.text} </span>
                   </div>
                   <div>
                     <button
@@ -209,7 +209,7 @@ function App() {
                 >
                   <div><input type="checkbox" defaultChecked />
                   <span style={{ marginBottom: "10px", marginLeft: "10px", fontWeight:"bolder" }}>
-                    {task.text}
+                    {task.text} <span className="fw-light fst-italic" >`completed at: {new Date().toLocaleString()}`</span>
                   </span></div>
                   <div>
                   <button
